@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pesquisar.css">
+    <h1 class="titulo">Pesquisar Registros</h1>
+</head>
+<body>
+    
+    
+    <form name="form1" method="post" action="pesquisar.php">
+           Insira o todo ou parte do nome a pesquisar:
+           <input class="txtpesq" type="text" id="txtnome" name="txtnome">
+           <br><br><br>
+           <div class="pesq-btn">
+           <input type="submit" id="pesq" name="pesq" value="Pesquisar">
+           <input type="reset" value="Limpar" onclick="document.getElementById('txtnome').focus();">
+           <input type="button" value="Menu" onclick="location.href='index.html'"/>
+        </div>
+    </form>
+</body>
+</html>

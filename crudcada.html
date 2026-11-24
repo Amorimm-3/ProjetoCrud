@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crudcada.css">
+</head>
+<body>
+    <div class="menu-cad">
+    <h1>Cadastrar Registros</h1>
+    <form method="post" action="cada.php">
+        Nome:<input type="text" id="txtnome" name="txtnome" maxlength="40" required/>
+        <br><br>
+        Email:<input type="email" id="txtemail" name="txtemail" maxlength="40" required/>
+        <br><br>
+        Senha:<input type="password" id="txtsenha" name="txtsenha" maxlength="8" required/>
+        <br><br>
+        Sexo:<br>Masculino:<input type="radio" value="M" id="txtsexom" name="txtsexo" checked/>
+        Feminino:<input type="radio" value="F" id="txtsexof" name="txtsexo"/>
+        <br><br>
+        Data:<input type="date" id="txtdata" name="txtdata"/>
+        <br><br><br>
+        <input type="submit" value="Cadastrar"/>
+        <input type="reset" value="Limpar" onclick="document.getElementById('txtnome').focus();"/>
+        <input type="button" value="Menu" onclick="location.href='index.html'"/>
+    </form>
+    </div>
+</body>
+</html>
